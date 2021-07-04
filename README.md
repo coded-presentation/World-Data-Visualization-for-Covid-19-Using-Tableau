@@ -1,4 +1,4 @@
-# Infection Vs Vaccination Visualization in SQL 
+# Global Infection Vs Vaccination Visualization in SQL (Part - 1)
 <h3>This Portfolio is based upon the OurWorldInData Project done by MIT and Standford University.
 </h3>
 <p>In this Portfolio i have mentioned several Queries that are used to find View's of different SubData from diversed data-set of Covid19_infection Contigency.</p>
@@ -19,7 +19,7 @@
 <h4>
             Computer Engineer / Data Analyst / Pursuing Google Data Analytics Professional Certificate
 </h4>
-<h2> Portfolio Project 2</h2>
+<h2> Portfolio Project (Part - 1)</h2>
 
 
 <h4>Covid 19 Data Exploration</h4>
