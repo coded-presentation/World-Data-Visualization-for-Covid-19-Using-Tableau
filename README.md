@@ -20,6 +20,26 @@
             Computer Engineer / Data Analyst / Pursuing Google Data Analytics Professional Certificate
 </h4>
 <h2> Portfolio Project 2</h2>
+
+/*
+Covid 19 Data Exploration 
+
+
+Skills used: Joins, CTE's, Temp Tables, Windows Functions, Aggregate Functions, Creating Views, Converting Data Types
+*/
+
+<br> 
+
+
+Select *
+From PortfolioProject..CovidDeaths
+Where continent is not null 
+order by 3,4
+
+</br>
+
+
+
 <a This image is of finding the total population affected by Covid-19 Infection href="https://1drv.ms/u/s!Agb9UJ70oAhYgYM2jDymgbEF5enhsA?e=soSt3C" ><img src="https://bn1305files.storage.live.com/y4mie76fSeaoaZCNJdy8S9kQK5osOk7g3LNVdlsEgjSmSy8zIw4oCw-PxRFIuo1kxYR7XbuRnHPgeZZDF7j4PMupEV2p_XQDo1NDqDrkgtvBdbK97e26hzv7RQNkoVFNYRp0SOUTom1OiMb8fBpObDxvH6u5EPA2jB8pTEfKIO-z1QlbFZN_7MglmNHk5RcAQ-_?width=660&height=371&cropmode=none" width="660" height="371" /> </a>
 <a href="https://1drv.ms/u/s!Agb9UJ70oAhYgYM2jDymgbEF5enhsA?e=soSt3C"><img src="https://bn1305files.storage.live.com/y4miNwsewCbNI2lI37AymFnY3rx3yIVORU_TIw8tnajx2yDfhzcHBvOQR9IgtUjIVmFlMmv1NtD4oimRmi3O2PqfVhUVvlXDEh74iG5pHpqHiHV9G-iwKfQd-zF64HMSgPU2GW40K6cFsAHFxS492q8LiWod4iIUFrBCb_QzgU-nmwYaIWmmOSj7JnlI8gD0U7F?width=660&height=371&cropmode=none" width="660" height="371" /> </a>     
 <a href="" ><img src="https://bn1305files.storage.live.com/y4mbF8fTIS7OO9wGdgYc-61cNWQW6HWiqoapJaJ2yXsMDqhdNa2WC6VgXZtY0AedplbAGu9RUCFh6RlSrs4Tih2-9-vAl16_JGVAFDpvo8Tfh-PmUVJMiFCWnWcDwleR5ZbX87OsWrb4HEKCADakIl08OIGSJbzQKWorwf2HLtG1y51sttojCdQn43Zwkbraxvp?width=1920&height=1080&cropmode=none"> </a>
