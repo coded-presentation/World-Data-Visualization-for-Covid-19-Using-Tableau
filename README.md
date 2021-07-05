@@ -142,7 +142,7 @@ Select *, (RollingPeopleVaccinated/Population)*100
 From #PercentPopulationVaccinated
 ```
  **Output  for Table 1**
-<a href="" ><img src="https://bn1305files.storage.live.com/y4mtkNxu6-LqNlfEj019AIzWKHFEMAlHz2urc3lkfAoKR5BxaRYeuFtAVhbZb4SmqrHDR8uGu1KSIe9DtZRvPpJtBqcfo4Tsb-3mUdIfn_XpAhODOem1gVR2Q8tqdPGogKckIzIQxflolS3UN0SJto1uScebHIcF9ex9MTswWfZuo9YDspNWzl_8pNo_59NbZM7?width=1920&height=1080&cropmode=none"> </a>
+<a href="" ><img src="https://www.dropbox.com/s/r5nzg1al6d9zwwm/Screenshot%20%2829%29.png?dl=0"> </a>
 
 >Creating View to store data for later visualizations
 ```
@@ -157,5 +157,5 @@ Join PortfolioProject..CovidVaccinations vac
 where dea.continent is not null 
 ```
  **Output  for Table 1**
-<a href="" ><img src="https://bn1305files.storage.live.com/y4mQx8kwUXbtgn9gEKaPX0ggbl3PvOD_-3bgFhAZ15XMddkvWyxgsjyYjmWtfYfHZuqsZs5M0hRNXVnsFFFUSL9pk4lctNoIqNjl8NAuu0e0ewiPavG4_0azhU40PxP1SM6yffA-FXgoQaakDvPJP20MJGxezDBnt7hevuPWy_TThPkuQ5wyOTJ22EwBzZWjScg?width=1920&height=1080&cropmode=none"> </a>
+<a href="" ><img src="https://www.dropbox.com/s/r5nzg1al6d9zwwm/Screenshot%20%2829%29.png?dl=0"> </a>
 
