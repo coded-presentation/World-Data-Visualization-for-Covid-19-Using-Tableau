@@ -1,4 +1,4 @@
-# Global Infection Vs Vaccination Visualization in Tableau (Part - 1)
+# Global Infection Vs Vaccination Visualization in Tableau (Part - 2)
 <h3>This Portfolio is based upon the OurWorldInData Project done by MIT and Standford University.
 </h3>
 <p>In this Portfolio i have mentioned several Queries that are used to find Views for attaching it on to tableau for visualization.</p>
@@ -19,10 +19,10 @@
 <h4>
             Computer Engineer / Data Analyst / Pursuing Google Data Analytics Professional Certificate
 </h4>
-<h2> Portfolio Project (Part - 1)</h2>
+<h2> Portfolio Project (Part - 2)</h2>
 
 
-<h4>Covid 19 Data Exploration</h4>
+<h4>Covid 19 Data Visualization</h4>
 
 
 >{Skills used: Joins, CTE's, Temp Tables, Windows Functions, Aggregate Functions, Creating Views, Converting Data Types}
