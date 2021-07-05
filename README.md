@@ -1,7 +1,7 @@
-# Global Infection Vs Vaccination Visualization in SQL (Part - 1)
+# Global Infection Vs Vaccination Visualization in Tableau (Part - 1)
 <h3>This Portfolio is based upon the OurWorldInData Project done by MIT and Standford University.
 </h3>
-<p>In this Portfolio i have mentioned several Queries that are used to find View's of different SubData from diversed data-set of Covid19_infection Contigency.</p>
+<p>In this Portfolio i have mentioned several Queries that are used to find Views for attaching it on to tableau for visualization.</p>
  
 
 <!---->        
@@ -25,7 +25,7 @@
 <h4>Covid 19 Data Exploration</h4>
 
 
->Skills used: Joins, CTE's, Temp Tables, Windows Functions, Aggregate Functions, Creating Views, Converting Data Types
+>{Skills used: Joins, CTE's, Temp Tables, Windows Functions, Aggregate Functions, Creating Views, Converting Data Types}
 
 >Countries with Highest Infection Rate compared to Population
 ```
@@ -37,125 +37,72 @@ order by PercentPopulationInfected desc
 ```
 
 
- **Output  for Table 1**
-<a This image is of finding the total population affected by Covid-19 Infection href="https://1drv.ms/u/s!Agb9UJ70oAhYgYM2jDymgbEF5enhsA?e=soSt3C" ><img src="https://bn1305files.storage.live.com/y4mie76fSeaoaZCNJdy8S9kQK5osOk7g3LNVdlsEgjSmSy8zIw4oCw-PxRFIuo1kxYR7XbuRnHPgeZZDF7j4PMupEV2p_XQDo1NDqDrkgtvBdbK97e26hzv7RQNkoVFNYRp0SOUTom1OiMb8fBpObDxvH6u5EPA2jB8pTEfKIO-z1QlbFZN_7MglmNHk5RcAQ-_?width=1920&height=1080&cropmode=none"> </a>
+ **Output  for sheet-1**
+<a This image is of finding the total population affected by Covid-19 Infection href=""><img src="https://bn1305files.storage.live.com/y4mwr5YbLVW5qEqGcSZ3lOpUbgvqmXj5qvdztvI5qgueLNHdnUQ3XHnaY8fP7BmWLQuHZSrPUIozSrDj0zdu0SnsQap1I2yZY5g4-_iwsvkhJybeW04fJLyi2wPbKo48MVZC3dhRgBy3sXP4KVEkP2OXZLbY024qYOCrUBo8Rb9SQy3Md9cVeNabuzEh5hVfPH8?width=1864&height=1080&cropmode=none"> </a>
 
 >Countries with Highest Death Count per Population
 
 ```
-Select Location, MAX(cast(Total_deaths as int)) as TotalDeathCount
-From PortfolioProject..CovidDeaths
---Where location like '%India%'
-Where continent is not null 
-Group by Location
-order by TotalDeathCount desc
-
-```
- **Output  for Table 1**
-<a href="https://1drv.ms/u/s!Agb9UJ70oAhYgYM2jDymgbEF5enhsA?e=soSt3C"><img src="https://bn1305files.storage.live.com/y4miNwsewCbNI2lI37AymFnY3rx3yIVORU_TIw8tnajx2yDfhzcHBvOQR9IgtUjIVmFlMmv1NtD4oimRmi3O2PqfVhUVvlXDEh74iG5pHpqHiHV9G-iwKfQd-zF64HMSgPU2GW40K6cFsAHFxS492q8LiWod4iIUFrBCb_QzgU-nmwYaIWmmOSj7JnlI8gD0U7F?width=1920&height=1080&cropmode=none"> </a>     
-
->BREAKING THINGS DOWN BY CONTINENT
->Showing contintents with the highest death count per population
-```
-Select continent, MAX(cast(Total_deaths as int)) as TotalDeathCount
-From PortfolioProject..CovidDeaths
---Where location like '%India%'
-Where continent is not null 
-Group by continent
-order by TotalDeathCount desc
-```
- **Output  for Table 1**
-<a href="" ><img src="https://bn1305files.storage.live.com/y4mbF8fTIS7OO9wGdgYc-61cNWQW6HWiqoapJaJ2yXsMDqhdNa2WC6VgXZtY0AedplbAGu9RUCFh6RlSrs4Tih2-9-vAl16_JGVAFDpvo8Tfh-PmUVJMiFCWnWcDwleR5ZbX87OsWrb4HEKCADakIl08OIGSJbzQKWorwf2HLtG1y51sttojCdQn43Zwkbraxvp?width=1920&height=1080&cropmode=none"> </a>
->GLOBAL NUMBERS
-```
 Select SUM(new_cases) as total_cases, SUM(cast(new_deaths as int)) as total_deaths, SUM(cast(new_deaths as int))/SUM(New_Cases)*100 as DeathPercentage
 From PortfolioProject..CovidDeaths
---Where location like '%India%'
+--Where location like '%states%'
 where continent is not null 
 --Group By date
 order by 1,2
 
 ```
- **Output  for Table 1**
-<a href="" ><img src="https://bn1305files.storage.live.com/y4mPvYz1HtTLB6pWBpahWE3SEPwmFgII_X3Nbj9t75dcILGH6UvTRYsMA-G91M5fQfQyk1Tn8P0F7uxB8QfIVyZtEy_Xv0RDjo64eahSWq4p_Vwiwcj42WUdZfE6Og1-47Pwlq3pI3v5Hjm2CD5ofmo84QgtQZ7cwLvp-bHmjy1LZnjt7DH_15RABFx0qUVcMjj?width=1920&height=1080&cropmode=none"> </a>
+ **Output  for Sheet-2**
+<a =""> <img src="https://bn1305files.storage.live.com/y4m_OnoC7Ahsd7YaW3hj2b01xKZtFRZbvcs1RAI9ufqjGjx-xBeGo3kGgss9ufradp3T1-1HQKAKJMd2X8BBjzFDUifGjL4gLp_T94bo22nRyxNDaDwNhPOs8I4OYYJ8mOnm_XxpPYrFWHhh6QDjmezbUjcvEo86epInCT6_PGyb29o_PcSCa2_zw_qagDwoKXY?width=1925&height=1079&cropmode=none"></a>     
+
+>BREAKING THINGS DOWN BY CONTINENT
+>Showing Total Deaths per continent
+```
+-- We take these out as they are not inluded in the above queries and want to stay consistent
+-- European Union is part of Europe
+
+Select location, SUM(cast(new_deaths as int)) as TotalDeathCount
+From PortfolioProject..CovidDeaths
+--Where location like '%states%'
+Where continent is null 
+and location not in ('World', 'European Union', 'International')
+Group by location
+order by TotalDeathCount desc
+
+```
+ **Output  for sheet-3**
+<a href="" ><img src="https://bn1305files.storage.live.com/y4mu1tGfb3OtKcqLc5b6lVSDPFsARFZJhpIEHv3wds_XGBX3mLE54lp-txIBP6i6OEuJIUcv_mHfaHWrxoA-cmcpiLlnPIZYKoNoIcGOGb9KuFFQ8VbFx57R-G-9vvF_C99NTvH5EccPHlWNogd8gcw3y6Zwatzt19x7gRWhordi3rT7vIHXp6-M9X_jDe1gbtt?width=1929&height=1080&cropmode=none"> </a>
+>GLOBAL NUMBERS
+>This view i ceated to show percent population infection per country by Geo-location
+```
+Select Location, Population, MAX(total_cases) as HighestInfectionCount,  Max((total_cases/population))*100 as PercentPopulationInfected
+From PortfolioProject..CovidDeaths
+--Where location like '%states%'
+Group by Location, Population
+order by PercentPopulationInfected desc
+
+
+```
+ **Output  for sheet-4**
+<a href="" ><img src="https://bn1305files.storage.live.com/y4mwBGVLPa88LMfEK0bw2iXx9KIHYDKucKiDZ6sgrQ_qrzvt1Lm8C-RwNzO-9hx_yaM2Y7McGwn3On_vgv2LhHJ6Xqn6BaeUYHhMa5pNmNFrtn9gTRoQM8ecbbWPSUxIoS9HfN72kPt0YVc0HLITZK3ri4ZkwjCmt19p3KbvQ0c76ZdBKk7P1ouRePDby_7mtTY?width=1928&height=1080&cropmode=none"> </a>
 >Total Population vs Vaccinations
->Shows Percentage of Population that has recieved at least one Covid Vaccine
+>Shows Percentage of Population got the infection and The projectile graph for different countries.
 ```
-Select dea.continent, dea.location, dea.date, dea.population, vac.new_vaccinations
-, SUM(CONVERT(int,vac.new_vaccinations)) OVER (Partition by dea.Location Order by dea.location, dea.Date) as RollingPeopleVaccinated
---, (RollingPeopleVaccinated/population)*100
-From PortfolioProject..CovidDeaths dea
-Join PortfolioProject..CovidVaccinations vac
-	On dea.location = vac.location
-	and dea.date = vac.date
-where dea.continent is not null 
-order by 2,3
+
+Select Location, Population,date, MAX(total_cases) as HighestInfectionCount,  Max((total_cases/population))*100 as PercentPopulationInfected
+From PortfolioProject..CovidDeaths
+--Where location like '%states%'
+Group by Location, Population, date
+order by PercentPopulationInfected desc
+
+
 ```
- **Output  for Table 1**
-<a href="" ><img src="https://bn1305files.storage.live.com/y4mwKC-Z-hcROzh0MqW28VBeOG-aNaY1XosfNcvl_FUCTAwN4iDTpnZ5Ker2P3WuUaSgAKfNLnMs24CTo_MWcTwNtwrKYIxaYfeNRTTY2bO2Q_4bGhkaPLUn8blz9LvV4F8k8RFlKQf8gtzYJQXcrSDXKkpqV99SsdnJTqvA154hIOXcvVwhqgLoO3NOKq2tRWf?width=1920&height=1080&cropmode=none"> </a>
+ **Output  for Table 5**
+<a href="" ><img src="https://bn1305files.storage.live.com/y4me1k3MMQYG4MPpOfKdFiL8CJh8_ki-heOxErVu_GSw3rOle4ps5fs8Ra4KangoDCMQ3pL-BVMRBJTRPJ_Zkb-GYjUranKBZd1phByMrt8Lkg6FWeyd2eXoVR8icJKpLOW52pB7HfVW86_ACJQsGGborCSv9f7ZjpTd-EisKYt6zNmK6wGQ56Eq_1ClkCvuyy6?width=1925&height=1079&cropmode=none"> </a>
 >Using CTE to perform Calculation on Partition By in previous query
-```
-With PopvsVac (Continent, Location, Date, Population, New_Vaccinations, RollingPeopleVaccinated)
-as
-(
-Select dea.continent, dea.location, dea.date, dea.population, vac.new_vaccinations
-, SUM(CONVERT(int,vac.new_vaccinations)) OVER (Partition by dea.Location Order by dea.location, dea.Date) as RollingPeopleVaccinated
---, (RollingPeopleVaccinated/population)*100
-From PortfolioProject..CovidDeaths dea
-Join PortfolioProject..CovidVaccinations vac
-	On dea.location = vac.location
-	and dea.date = vac.date
-where dea.continent is not null 
---order by 2,3
-)
-Select *, (RollingPeopleVaccinated/Population)*100
-From PopvsVac
 
-```
- **Output  for Table 1**
-<a href="" ><img src="https://bn1305files.storage.live.com/y4mwKC-Z-hcROzh0MqW28VBeOG-aNaY1XosfNcvl_FUCTAwN4iDTpnZ5Ker2P3WuUaSgAKfNLnMs24CTo_MWcTwNtwrKYIxaYfeNRTTY2bO2Q_4bGhkaPLUn8blz9LvV4F8k8RFlKQf8gtzYJQXcrSDXKkpqV99SsdnJTqvA154hIOXcvVwhqgLoO3NOKq2tRWf?width=1920&height=1080&cropmode=none"> </a>
->Using Temp Table to perform Calculation on Partition By in previous query
-```
-DROP Table if exists #PercentPopulationVaccinated
-Create Table #PercentPopulationVaccinated
-(
-Continent nvarchar(255),
-Location nvarchar(255),
-Date datetime,
-Population numeric,
-New_vaccinations numeric,
-RollingPeopleVaccinated numeric
-)
+<!--\-->
 
-Insert into #PercentPopulationVaccinated
-Select dea.continent, dea.location, dea.date, dea.population, vac.new_vaccinations
-, SUM(CONVERT(int,vac.new_vaccinations)) OVER (Partition by dea.Location Order by dea.location, dea.Date) as RollingPeopleVaccinated
---, (RollingPeopleVaccinated/population)*100
-From PortfolioProject..CovidDeaths dea
-Join PortfolioProject..CovidVaccinations vac
-	On dea.location = vac.location
-	and dea.date = vac.date
---where dea.continent is not null 
---order by 2,3
 
-Select *, (RollingPeopleVaccinated/Population)*100
-From #PercentPopulationVaccinated
-```
- **Output  for Table 1**
-<a href="" ><img src="https://www.dropbox.com/s/r5nzg1al6d9zwwm/Screenshot%20%2829%29.png?dl=0"> </a>
-
->Creating View to store data for later visualizations
-```
-Create View PercentPopulationVaccinated as
-Select dea.continent, dea.location, dea.date, dea.population, vac.new_vaccinations
-, SUM(CONVERT(int,vac.new_vaccinations)) OVER (Partition by dea.Location Order by dea.location, dea.Date) as RollingPeopleVaccinated
---, (RollingPeopleVaccinated/population)*100
-From PortfolioProject..CovidDeaths dea
-Join PortfolioProject..CovidVaccinations vac
-	On dea.location = vac.location
-	and dea.date = vac.date
-where dea.continent is not null 
-```
- **Output  for Table 1**
-<a href="" ><img src="https://www.dropbox.com/s/r5nzg1al6d9zwwm/Screenshot%20%2829%29.png?dl=0"> </a>
-
+#Go To Tablue Deskop and review my work 
+					   
+<a href="https://prod-apnortheast-a.online.tableau.com/#/site/tableauprofessinals/workbooks/225471?:origin=card_share_link&:embedded=n"><img src="https://bn1305files.storage.live.com/y4mEoYRgATab49RvcnKBBXbH4JJhTS2mcbZo6BIw5ISHJNkuVbgt5dXCbnd4lLcFru5miS4E2Z-2zmc_CBNuccwyEGcPdfocYir781NIKhSBCrX0F7jWrSZnK-2jhnvSM3TbQk4qlEawKNrFY5_p3e2U5k0C4rk_8crFJA1Lo6cZjeN9CLEbPi7rihcsdH0EENr?width=1936&height=1079&cropmode=none"></a>
