@@ -105,10 +105,10 @@ order by PercentPopulationInfected desc
 
 <!--\-->
 
-	🔽<h2> conclusion:</h2> 
-	<br></br>
-From the following Exercises i have learned skills in sql such as Joins, CTE's, Temp Tables, Windows Functions, Aggregate Functions, Creating Views, Converting Data Types,
-and i've done successful data cleaning, exploration, extraction, and visualization of covid-19 pandemic, by performing predictive analysis of the data provided by Our-World-In-Data organization.
+<h2> Conclusion:</h2> 
+
+__From the following Exercises i have learned skills in sql such as Joins, CTE's, Temp Tables, Windows Functions, Aggregate Functions, Creating Views, Converting Data Types,
+and i've done successful data cleaning, exploration, extraction, and visualization of covid-19 pandemic, by performing predictive analysis of the data provided by Our-World-In-Data organization.__
 
 #Go To Tablue Deskop and review my work 
 					   
