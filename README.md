@@ -11,8 +11,9 @@
 </a>
 
 <h2> About Me</h2>
-<a href="https://www.linkedin.com/in/karan-shah-020b4baa"><img src="https://media-exp3.licdn.com/dms/image/D5635AQGENREQtSOVvA/profile-framedphoto-shrink_400_400/0/1624892028859?e=1625497200&amp;v=beta&amp;t=nHSeFvfJ5joOESVOVAkxRgNxPjWHCPtUIR6yaMmysBE" height="100" alt="KARAN SHAH, #OPEN_TO_WORK" id="ember53" class="profile-photo-edit__preview ember-view">
-</a>
+<div>
+<a href="https://media-exp3.licdn.com/dms/image/D5635AQGENREQtSOVvA/profile-framedphoto-shrink_100_100/0/1624892028859?e=1626242400&v=beta&t=Vg9jbuG3OgWuTiinlR3A6Pdcpfw1iBu_MgY2_MlgNNE"><img src="https://media-exp3.licdn.com/dms/image/D5635AQGENREQtSOVvA/profile-framedphoto-shrink_100_100/0/1624892028859?e=1626242400&v=beta&t=Vg9jbuG3OgWuTiinlR3A6Pdcpfw1iBu_MgY2_MlgNNE"></a>
+</div>
 <h3>
             KARAN SHAH
 </h3>
